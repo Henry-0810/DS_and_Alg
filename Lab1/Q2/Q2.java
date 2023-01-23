@@ -13,26 +13,23 @@ public class Q2 {
                 numArr.add(input);
             }
             else if(input < 0){
+                System.out.println("System is shutting down...");
                 break;
             }
             else{
                 System.out.println("Number out of bounds!");
+                break;
             }
         }
-        System.out.println(countAllNums(numArr));
+        System.out.println(countNums(numArr));
     }
 
-    private static String countAllNums(ArrayList<Integer> numArr) {
+    private static String countNums(ArrayList<Integer> numArr) {
         int count = 0;
         String output = "";
-        for (int num:numArr) {
-            for (int i = 1; i <= 100; i++) {
-                if(num == i){
-                    count++;
-                }
-            }
-            output +=  num + ": " + count + "\n";
+        for (int num: numArr) {
+
         }
-        return output;
+        return null;
     }
 }
