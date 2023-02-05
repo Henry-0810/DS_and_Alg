@@ -3,6 +3,7 @@ package Lab3;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Random;
 
 public class Deck {
     private Card[] cards;
@@ -19,17 +20,19 @@ public class Deck {
         this.cards = cards;
     }
 
-    public Card[] shuffle(Card[] cards){
-        ArrayList<Card> shuffledCards = new ArrayList<>();
-        HashSet<Integer> shuffleOrder = new HashSet<>();
-        while(shuffleOrder.size() <= cards.length){
-            int num = (int) (Math.random() * cards.length);
-            shuffleOrder.add(num);
-        }
-        for (int i = 0; i < shuffleOrder.size(); i++) {
-            System.out.println();
-        }
+    public static void shuffle(Card[] cards){
+        Random r = new Random();
+        for (int i = 0; i < cards.length; i++) {
+            int index = r.nextInt(cards.length);
 
-        return null;
+            Card temp = cards[i];
+            cards[i] = cards[index];
+            cards[index] = temp;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(getCards());
     }
 }

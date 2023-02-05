@@ -6,7 +6,7 @@ public class Card {
 
     public Card(int face, String suit) {
         setFace(face);// 1 to 13 representing Ace to King
-        setSuit(suit);//"H", "D", "Clubs", or "Spades"
+        setSuit(suit);//"H", "D", "C", or "S"
     }
 
     public int getFace() {
