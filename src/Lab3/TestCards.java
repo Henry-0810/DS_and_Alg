@@ -7,10 +7,10 @@ public class TestCards {
         ArrayList<Card> cards = new ArrayList<>();
         Card[] cardArr;
         for (int i = 1; i <= 13; i++) {
-            Card hearts = new Card(i,"Hearts");
-            Card clubs = new Card(i,"Clubs");
-            Card spades = new Card(i,"Spades");
-            Card diamonds = new Card(i,"Diamonds");
+            Card hearts = new Card(i, "Hearts");
+            Card clubs = new Card(i, "Clubs");
+            Card spades = new Card(i, "Spades");
+            Card diamonds = new Card(i, "Diamonds");
             cards.add(hearts);
             cards.add(clubs);
             cards.add(spades);
