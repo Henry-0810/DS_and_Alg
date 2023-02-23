@@ -1,4 +1,4 @@
-package Lab2.Q1;
+package Lab2;
 
 public class TestEncryption {
     public static void main(String[] args) {

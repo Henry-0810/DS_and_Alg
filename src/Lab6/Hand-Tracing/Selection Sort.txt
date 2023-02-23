@@ -1,0 +1,122 @@
+2. Show how the following lists will be sorted using (a) selection sort (b) insertion sort.
+Show all the comparisons required and the state of the array after each iteration of the outer for loop.
+For selection sort, also specify the swaps that take place.
+
+Array 1: 34, 26, 77, 33, 99, 82, 12, 55
+
+Selection Sort
+Iter 1:
+Comparison:
+34,26 - >
+26,77 - <
+26,33 - <
+26,99 - <
+26,82 - <
+26,12 - >
+12,55 - <
+Swap 34,12
+Array: (12),26,77,33,99,82,(34),55
+
+Iter 2:
+Comparison:
+26,77 - <
+26,33 - <
+26,88 - <
+26,82 - <
+26,34 - <
+26,55 - <
+No Swap
+Array: 12,26,77,33,99,82,34,55
+
+Iter 3:
+Comparison:
+77,33 - >
+33,99 - <
+33,34 - <
+33,55 - <
+Swap 33,77
+Array: 12,26,(33),(77),99,82,34,55
+
+Iter 4:
+Comparison:
+77,99 - <
+77,82 - <
+77,34 - >
+34,55 - <
+Swap 34,77
+Array: 12,26,33,(34),99,82,(77),55
+
+Iter 5:
+Comparison:
+99,82 - >
+82,77 - >
+55,77 - <
+Swap 99,55
+Array: 12,26,33,34,(55),82,77,(99)
+
+Iter 6:
+Comparison:
+82,77 - >
+77,99 - <
+Swap 82,77
+Array: 12,26,33,34,55,(77),(82),99
+
+Iter 7:
+Comparison:
+82,99 - <
+No Swap
+Array: 12,26,33,34,55,77,82,99
+
+Array 2: 7, 5, 10, 12, 11, 8, 4
+
+Selection Sort
+Iter 1:
+Comparison:
+7,5 - >
+5,10 - <
+5,12 - <
+5,11 - <
+5,8 - <
+4,5 - <
+Swap 7,4
+Array: (4),5,10,12,11,8,(7)
+
+Iter 2:
+Comparison:
+5,10 - <
+5,12 - <
+5,11 - <
+5,8 - <
+5,7 - <
+No Swap
+Array: (4),5,10,12,11,8,(7)
+
+Iter 3:
+Comparison:
+10,12 - <
+10,11 - <
+10,8 - >
+8,7 - >
+Swap 10,7
+Array: 4,5,(7),12,11,8,(10)
+
+Iter 4:
+Comparison:
+12,11 - >
+11,8 - >
+8,10 - <
+Swap 12,8
+Array: 4,5,7,(8),11,(12),10
+
+Iter 5:
+Comparison:
+11,12 - <
+11,10 - >
+Swap 11,10
+Array: 4,5,7,8,(10),12,(11)
+
+Iter 6:
+Comparison:
+12,11 - >
+Swap 12,11
+Array: 4,5,7,8,10,(11),(12)

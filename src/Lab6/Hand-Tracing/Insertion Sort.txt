@@ -1,0 +1,48 @@
+Array 1: 34, 26, 77, 33, 99, 82, 12, 55
+
+Insertion Sort
+Iter 1:
+Comparison:
+34,26 - >
+Array: 26,34
+
+Iter 2:
+Comparison:
+34,77 - <
+Array: 26,34,77
+
+Iter 3:
+Comparison:
+77,33 - >
+33,34 - <
+33,26 - >
+Array: 26,33,34,77
+
+Iter 4:
+Comparison:
+77,99 - <
+Array: 26,33,34,77,99
+
+Iter 5:
+Comparison:
+99,82 - >
+82,77 - >
+Array: 26,33,34,77,82,99
+
+Iter 6:
+Comparison:
+99,12 - >
+12,82 - <
+12,77 - <
+12,34 - <
+12,33 - <
+12,26 - <
+Arrays: 12,26,33,34,77,82,99
+
+Iter 7:
+Comparison:
+99,55 - >
+55,82 - <
+55,77 - <
+55,34 - >
+Arrays: 12,26,33,34,55,77,82,99
