@@ -44,14 +44,23 @@ public class MyArrays {
         }
         else{
             int m = (from+to)/2;
-            if(key == arr[m]){
-                return m;
-            }
-            else if(key>arr[m]){
-                return recursiveBinarySearch(arr,key,m+1,to);
-            }
+            if(key == arr[m]) return m;
+            else if(key>arr[m]) return recursiveBinarySearch(arr,key,m+1,to);
             else return recursiveBinarySearch(arr,key,from,m-1);
         }
     }
 
+    public static int iterBinarySearch(int[] arr,int key) {
+        int start = 0;
+        int end = arr.length - 1;
+        while (start <= end) {
+            int m = (start + end) / 2;
+            if (key == arr[m]) return m;
+            else if (key > arr[m]) {
+                start = m - 1;
+            }
+            else end = m + 1;
+        }
+        return -1;
+    }
 }

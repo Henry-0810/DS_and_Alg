@@ -26,9 +26,17 @@ class MyArraysTest {
     }
 
     @Test
-    void testBinarySearch(){
+    void testBinarySearchRecurs(){
         int[] arr = {10,55,67,82,3,4,69};
         MyArrays.insertionSort(arr);
         assertEquals(3,MyArrays.recursiveBinarySearch(arr,55,0,arr.length));
     }
+
+    @Test
+    void testBinarySearchIter(){
+        int[] arr = {1,2,3,4,5,6};
+        assertEquals(3,MyArrays.iterBinarySearch(arr,4));
+    }
+
+
 }
