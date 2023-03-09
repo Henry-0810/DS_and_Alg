@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class MyArrays {
     public static void selectionSort(int[] arr){
-        for (int i = 0; i <= arr.length - 2; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
             //find index such that a[index] is the smallest of a[i]..a[a.length-1]
             int index = i;
             int smallest = arr[i];
-            for (int j = i + 1; j <= arr.length - 1; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j] < smallest) {
                     smallest = arr[j];
                     index = j;
@@ -63,4 +63,13 @@ public class MyArrays {
         }
         return -1;
     }
+
+    public static void main(String[] args) {
+
+    }
+
+
+
+
+
 }
